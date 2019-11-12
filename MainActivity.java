@@ -12,15 +12,6 @@ import android.widget.TextView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
-    /*
-    // build.gradle (Module: app)
-
-    dependencies {
-	...
-        implementation 'com.google.android.material:material:1.0.0'
-	...
-    }
-*/
 
     public static final String EXTRA_MESSAGE = "edu.liceococito.esempio2.MESSAGE";
     private TextView tvName;
@@ -34,37 +25,20 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch(v.getId()) {
                 case R.id.btSecond: {
-                    String mex = "Click su NEXT";
+                    String mex = "Click su SECOND";
 
                     // Scrive una riga nei log, taggando il messaggio col nome dell'Activity
                     Log.d(TAG, mex);
-
-                    /* Scrive lo stesso messaggio a video in una SnackBar
-                    Una volta copiata la riga, AS chiede in automatico di aggiungere una dipendenza
-                    per Gradle
-                    */
-                    Snackbar.make(btSecond, "Leggo il json da remoto [TODO]...", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
-
                     /* Chiama il metodo per far aprire la seconda schermata, passando parametri
                             senza aspettarsi alcuna risposta
                     */
                     openSecondActivity();
-
                     break;
                 }
                 case R.id.btThird: {
-                    String mex = "Click su DELETE";
-
+                    String mex = "Click su THIRD";
                     // Scrive una riga nei log, taggando il messaggio col nome dell'Activity
                     Log.d(TAG, mex);
-
-                    /* Scrive lo stesso messaggio a video in una SnackBar
-                    Una volta copiata la riga, AS chiede in automatico di aggiungere una dipendenza
-                    per Gradle
-                    */
-                    Snackbar.make(btSecond, "Leggo il json da remoto [TODO]...", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
                     break;
                 }
             }
