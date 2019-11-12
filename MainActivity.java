@@ -12,6 +12,15 @@ import android.widget.TextView;
 import com.google.android.material.snackbar.Snackbar;
 
 public class MainActivity extends AppCompatActivity {
+    /*
+    // build.gradle (Module: app)
+
+    dependencies {
+	...
+        implementation 'com.google.android.material:material:1.0.0'
+	...
+    }
+*/
 
     public static final String EXTRA_MESSAGE = "edu.liceococito.esempio2.MESSAGE";
     private TextView tvName;
